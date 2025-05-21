@@ -1,0 +1,8 @@
+---
+- name: Linux Patching Using Local RHEL/OEL Repo
+  hosts: linux_hosts
+  become: true
+  vars_files:
+    - group_vars/all.yml
+  roles:
+    - patch_linux
